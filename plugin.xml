@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.eightz.mobile.cordova.plugin.android.referrer"
+    id="com.propel.cordova.plugin.android.referrer"
     version="1.0.0">
   <engines>
     <engine name="cordova" version=">=2.8.0" />
@@ -13,10 +13,10 @@
   <keywords>referrer</keywords>
 
   <platform name="android">
-	  <source-file src="src/com/eightz/mobile/cordova/plugin/android/referrer/Receiver.java" target-dir="src/com/eightz/mobile/cordova/plugin/android/referrer/" />
+	  <source-file src="src/com/propel/cordova/plugin/android/referrer/Receiver.java" target-dir="src/com/propel/cordova/plugin/android/referrer/" />
 
 	  <config-file target="AndroidManifest.xml" parent="/manifest/application">
-		  <receiver android:exported="true" android:name="com.eightz.mobile.cordova.plugin.android.referrer.Receiver">
+		  <receiver android:exported="true" android:name="com.propel.cordova.plugin.android.referrer.Receiver">
             <intent-filter>
                 <action android:name="com.android.vending.INSTALL_REFERRER" />
             </intent-filter>

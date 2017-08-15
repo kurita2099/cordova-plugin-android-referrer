@@ -33,7 +33,7 @@ run `adb shell` and then
 
 ```
 am broadcast -a com.android.vending.INSTALL_REFERRER \
--n <your package here>/com.eightz.mobile.cordova.plugin.android.referrer.Receiver \
+-n <your package here>/com.propel.cordova.plugin.android.referrer.Receiver \
 --es "referrer" "textinreferrer"
 ```
 
@@ -43,4 +43,3 @@ am broadcast -a com.android.vending.INSTALL_REFERRER \
 * I don't know how long a referrer string can be.
 * I believe the referrer string can contain any characters that are valid in URL query strings, but don't think that ampersands are allowed.  For example: `&referrer=foo&bar` would result in a captured `referrer` of `foo`
 * If you are trying to be compatible with the `app-argument` text in Apple smart banners, be aware that `app-argument` text block is [required to be a url](http://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners.html).
-

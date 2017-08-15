@@ -1,4 +1,4 @@
-package com.eightz.mobile.cordova.plugin.android.referrer;
+package com.propel.cordova.plugin.android.referrer;
 
 import android.os.Bundle;
 import android.content.BroadcastReceiver;
