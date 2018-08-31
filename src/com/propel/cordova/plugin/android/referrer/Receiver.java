@@ -10,11 +10,15 @@ import android.content.SharedPreferences.Editor;
 import android.preference.PreferenceManager;
 
 import android.util.Log;
+import com.adjust.sdk.AdjustReferrerReceiver;
 
 public class Receiver extends BroadcastReceiver {
 
 @Override
 public void onReceive(Context context, Intent intent) {
+
+    // Adjust
+    new AdjustReferrerReceiver().onReceive(context, intent);
 
     Bundle extras = intent.getExtras();
     if (extras != null) {
