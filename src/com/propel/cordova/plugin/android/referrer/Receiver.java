@@ -1,7 +1,5 @@
 package com.propel.cordova.plugin.android.referrer;
 
-import io.branch.referral.InstallListener;
-
 import android.os.Bundle;
 import android.content.BroadcastReceiver;
 import android.content.SharedPreferences;
@@ -27,9 +25,6 @@ public void onReceive(Context context, Intent intent) {
     	    Editor edit = sharedPreferences.edit();
     	    edit.putString("referrer", referrerString);
     	    edit.commit();
-
-            InstallListener branchListener = new InstallListener();
-            branchListener.onReceive(context, intent);
         }
     }
 }
