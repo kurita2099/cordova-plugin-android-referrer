@@ -16,7 +16,8 @@
 	  <source-file src="src/com/propel/cordova/plugin/android/referrer/Receiver.java" target-dir="src/com/propel/cordova/plugin/android/referrer/" />
 
 	  <config-file target="AndroidManifest.xml" parent="/manifest/application">
-		  <receiver android:exported="true" android:name="com.propel.cordova.plugin.android.referrer.Receiver">
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/accent" />
+		<receiver android:exported="true" android:name="com.propel.cordova.plugin.android.referrer.Receiver">
             <intent-filter>
                 <action android:name="com.android.vending.INSTALL_REFERRER" />
             </intent-filter>
