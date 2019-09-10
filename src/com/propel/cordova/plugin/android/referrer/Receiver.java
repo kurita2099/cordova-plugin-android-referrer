@@ -1,6 +1,6 @@
 package com.propel.cordova.plugin.android.referrer;
 
-import io.branch.referral.InstallListener;
+//import io.branch.referral.InstallListener;
 
 import android.os.Bundle;
 import android.content.BroadcastReceiver;
@@ -28,8 +28,8 @@ public void onReceive(Context context, Intent intent) {
     	    edit.putString("referrer", referrerString);
     	    edit.commit();
 
-            InstallListener branchListener = new InstallListener();
-            branchListener.onReceive(context, intent);
+            //InstallListener branchListener = new InstallListener();
+            //branchListener.onReceive(context, intent);
         }
     }
 }
