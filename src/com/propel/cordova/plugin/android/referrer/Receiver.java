@@ -22,9 +22,7 @@ public void onReceive(Context context, Intent intent) {
     if (extras != null) {
     	String referrerString = extras.getString("referrer");
         if (referrerString != null) {
-    	    //SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
-            Context appContext = context.getApplicationContext();
-            SharedPreferences sharedPreferences = appContext.getPreferences(Context.MODE_PRIVATE);
+    	    SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
     	    Editor edit = sharedPreferences.edit();
     	    edit.putString("referrer", referrerString);
     	    edit.commit();
